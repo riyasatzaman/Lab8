@@ -35,4 +35,13 @@ public class CustomListTest {
         assertEquals(true, list.hasCity(city));  // Expected to pass once functionality is implemented
     }
 
+    @Test
+    public void testDeleteCity() {
+        list = MockCityList();
+        City city = new City("Estevan", "SK");
+        list.addCity(city);
+        list.deleteCity(city);
+        assertEquals(false, list.hasCity(city));  // Expected to pass once functionality is implemented
+    }
+
 }
