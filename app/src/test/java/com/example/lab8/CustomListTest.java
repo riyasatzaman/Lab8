@@ -52,4 +52,5 @@ public class CustomListTest {
         assertEquals(2, list.countCities());  // Expected to pass once functionality is implemented
     }
 
+
 }
