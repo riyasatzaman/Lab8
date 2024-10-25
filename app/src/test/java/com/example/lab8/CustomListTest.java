@@ -44,4 +44,12 @@ public class CustomListTest {
         assertEquals(false, list.hasCity(city));  // Expected to pass once functionality is implemented
     }
 
+    @Test
+    public void testCountCities() {
+        list = MockCityList();
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("Regina", "SK"));
+        assertEquals(2, list.countCities());  // Expected to pass once functionality is implemented
+    }
+
 }
